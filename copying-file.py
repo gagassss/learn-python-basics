@@ -1,0 +1,7 @@
+filename = input("Enter your file name : ")
+newfile = input("Enter new file name : ")
+file = open(filename)
+newFile = open(newfile, "w")
+newFile.write(file.read())
+file.close()
+newFile.close()
